@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
@@ -10,15 +11,15 @@
 
   <meta
     name="description"
-    content="Wedding Events of Furqan Moin - Nikkah, Wedding Ceremony and Valima Reception"
+    content="Wedding Celebrations of Furqan Moin"
   />
 
   <meta
     name="theme-color"
-    content="#13231f"
+    content="#f7f1e8"
   />
 
-  <title>Furqan Moin | Wedding Events</title>
+  <title>Furqan Moin | Wedding Invitation</title>
 
   <link
     rel="preconnect"
@@ -55,24 +56,24 @@
         "Montserrat",
         sans-serif;
 
-      color: #f6efe4;
+      color: #443d35;
 
       background:
         radial-gradient(
-          circle at 15% 10%,
-          rgba(179, 142, 78, 0.13),
+          circle at 14% 12%,
+          rgba(255, 255, 255, 0.95),
           transparent 30%
         ),
         radial-gradient(
-          circle at 90% 90%,
-          rgba(68, 101, 83, 0.28),
-          transparent 36%
+          circle at 88% 88%,
+          rgba(198, 180, 151, 0.18),
+          transparent 34%
         ),
         linear-gradient(
           180deg,
-          #14231f 0%,
-          #0f1b18 55%,
-          #0a1512 100%
+          #fffaf5 0%,
+          #f7f0e7 55%,
+          #eee3d6 100%
         );
     }
 
@@ -81,13 +82,9 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    a {
-      color: inherit;
-    }
-
-    /* =====================================
-       INTRO
-    ===================================== */
+    /* =================================
+       OPENING SCREEN
+    ================================= */
 
     .intro {
       min-height: 100svh;
@@ -100,13 +97,11 @@
 
       overflow: hidden;
 
-      padding: 50px 18px 90px;
+      padding:
+        32px 16px 82px;
     }
 
-    .intro::before,
-    .intro::after {
-      content: "";
-
+    .glow {
       position: absolute;
 
       width: 430px;
@@ -114,47 +109,51 @@
 
       border-radius: 50%;
 
-      filter: blur(100px);
+      filter: blur(90px);
 
       pointer-events: none;
     }
 
-    .intro::before {
+    .glow.one {
       top: -190px;
       left: -170px;
 
       background:
-        rgba(193, 151, 80, 0.17);
+        rgba(170, 190, 162, 0.28);
     }
 
-    .intro::after {
+    .glow.two {
       right: -190px;
-      bottom: -220px;
+      bottom: -210px;
 
       background:
-        rgba(89, 124, 104, 0.2);
+        rgba(202, 171, 127, 0.19);
     }
 
     .intro-inner {
       width: 100%;
-      max-width: 620px;
+      max-width: 540px;
 
       position: relative;
-      z-index: 5;
+      z-index: 3;
 
       text-align: center;
     }
 
-    .eyebrow {
-      margin-bottom: 13px;
+    .mini-title {
+      margin-bottom: 8px;
 
-      font-size: 9px;
+      font-family:
+        "Cormorant Garamond",
+        serif;
+
+      font-size: 11px;
       font-weight: 600;
 
-      letter-spacing: 0.32em;
+      letter-spacing: 0.28em;
       text-transform: uppercase;
 
-      color: #cfaa6c;
+      color: #a17645;
     }
 
     .intro-title {
@@ -163,83 +162,71 @@
         serif;
 
       font-size:
-        clamp(46px, 9vw, 74px);
+        clamp(42px, 8vw, 62px);
 
       font-weight: 500;
 
-      line-height: 0.95;
+      line-height: 1;
 
-      color: #fffaf2;
+      color: #394736;
     }
 
-    .intro-title span {
-      display: block;
+    .intro-subtitle {
+      max-width: 365px;
 
-      margin-top: 12px;
+      margin:
+        14px auto 38px;
 
-      font-family:
-        "Great Vibes",
-        cursive;
+      font-size: 12px;
 
-      font-size:
-        clamp(56px, 12vw, 92px);
+      line-height: 1.8;
 
-      font-weight: 400;
-
-      color: #d4a965;
+      color: #83786c;
     }
 
-    .intro-copy {
-      max-width: 410px;
-
-      margin: 22px auto 42px;
-
-      font-size: 11px;
-
-      line-height: 1.9;
-
-      color: rgba(255, 249, 240, 0.68);
-    }
-
-    /* =====================================
+    /* =================================
        ENVELOPE
-    ===================================== */
+    ================================= */
 
     .envelope-stage {
-      min-height: 440px;
+      min-height: 565px;
 
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
 
       perspective: 1600px;
     }
 
     .envelope {
-      width: min(92vw, 440px);
-      height: 275px;
+      width:
+        min(92vw, 430px);
+
+      height: 285px;
 
       position: relative;
 
-      perspective: 1500px;
+      perspective: 1600px;
       transform-style: preserve-3d;
     }
 
     .envelope-shadow {
       position: absolute;
 
-      width: 84%;
-      height: 45px;
+      width: 88%;
+      height: 50px;
 
-      left: 8%;
-      bottom: -36px;
+      left: 6%;
+      bottom: -38px;
+
+      z-index: 0;
 
       border-radius: 50%;
 
       background:
-        rgba(0, 0, 0, 0.38);
+        rgba(71, 54, 38, 0.17);
 
-      filter: blur(24px);
+      filter: blur(23px);
     }
 
     .envelope-back {
@@ -250,34 +237,38 @@
 
       border:
         1px solid
-        rgba(212, 169, 101, 0.24);
+        rgba(127, 100, 68, 0.13);
 
       border-radius:
-        12px 12px 24px 24px;
+        10px 10px 24px 24px;
 
       background:
         linear-gradient(
-          145deg,
-          rgba(255, 255, 255, 0.035),
-          transparent 45%
+          135deg,
+          rgba(255, 255, 255, 0.48),
+          transparent 48%
         ),
-        #1d332b;
+        #eadfd2;
 
       box-shadow:
-        0 30px 70px
-        rgba(0, 0, 0, 0.27);
+        0 30px 65px
+        rgba(80, 62, 44, 0.13);
     }
 
-    .invitation-preview {
+    /* =================================
+       CARD INSIDE ENVELOPE
+    ================================= */
+
+    .invitation {
       position: absolute;
 
       width:
-        calc(100% - 34px);
+        calc(100% - 32px);
 
-      height: 420px;
+      height: 510px;
 
-      left: 17px;
-      bottom: 21px;
+      left: 16px;
+      bottom: 22px;
 
       z-index: 2;
 
@@ -285,27 +276,30 @@
 
       border:
         1px solid
-        rgba(195, 151, 81, 0.4);
+        rgba(168, 128, 73, 0.26);
 
       border-radius:
-        18px 18px 10px 10px;
+        19px 19px 12px 12px;
 
       background:
         radial-gradient(
-          circle at 10% 10%,
-          rgba(177, 143, 82, 0.09),
+          circle at 0 0,
+          rgba(210, 222, 202, 0.45),
           transparent 28%
         ),
-        linear-gradient(
-          180deg,
-          #fffaf0,
-          #f2e8d6
-        );
+        radial-gradient(
+          circle at 100% 100%,
+          rgba(209, 188, 154, 0.24),
+          transparent 29%
+        ),
+        #fffdf9;
 
-      color: #27382f;
+      box-shadow:
+        0 25px 50px
+        rgba(73, 55, 38, 0.12);
 
       transform:
-        translateY(155px);
+        translateY(180px);
 
       transition:
         transform 1.45s
@@ -317,53 +311,87 @@
         );
     }
 
-    .preview-border {
+    .gold-border {
       position: absolute;
 
-      inset: 11px;
+      inset: 12px;
 
       border:
         1px solid
-        rgba(164, 120, 55, 0.32);
+        rgba(168, 128, 73, 0.34);
 
-      border-radius: 12px;
+      border-radius: 13px;
 
       pointer-events: none;
     }
 
-    .preview-content {
+    .invitation::before,
+    .invitation::after {
+      content: "❀";
+
+      position: absolute;
+
+      font-size: 110px;
+
+      line-height: 1;
+
+      opacity: 0.065;
+
+      color: #52604d;
+
+      pointer-events: none;
+    }
+
+    .invitation::before {
+      left: -32px;
+      top: 28px;
+
+      transform:
+        rotate(-24deg);
+    }
+
+    .invitation::after {
+      right: -35px;
+      bottom: 22px;
+
+      transform:
+        rotate(24deg);
+    }
+
+    .card-content {
       position: relative;
-      z-index: 2;
+
+      z-index: 3;
 
       padding:
-        35px 25px;
+        38px 24px 25px;
 
       text-align: center;
     }
 
-    .preview-small {
-      font-size: 8px;
+    .preview-kicker {
+      font-size: 9px;
       font-weight: 600;
 
-      letter-spacing: 0.28em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
 
-      color: #986f3f;
+      color: #a17645;
     }
 
     .preview-title {
-      margin-top: 9px;
+      margin-top: 8px;
 
       font-family:
         "Cormorant Garamond",
         serif;
 
       font-size: 27px;
-      font-weight: 700;
+      font-weight: 600;
 
-      letter-spacing: 0.08em;
+      letter-spacing: 0.07em;
 
-      color: #2b4237;
+      color: #394736;
     }
 
     .preview-name {
@@ -377,44 +405,81 @@
 
       line-height: 1;
 
-      color: #a06f35;
+      color: #a06e38;
     }
 
-    .preview-events {
-      margin-top: 25px;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 9px;
-
-      flex-wrap: wrap;
+    .preview-parent {
+      margin-top: 11px;
 
       font-family:
         "Cormorant Garamond",
         serif;
 
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 600;
 
-      letter-spacing: 0.1em;
+      letter-spacing: 0.04em;
+
+      color: #443d35;
+    }
+
+    .preview-divider {
+      width: 65px;
+      height: 1px;
+
+      margin: 22px auto;
+
+      background:
+        rgba(168, 128, 73, 0.4);
+    }
+
+    .preview-events {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      font-family:
+        "Cormorant Garamond",
+        serif;
+
+      font-size: 15px;
+      font-weight: 600;
+
+      letter-spacing: 0.08em;
       text-transform: uppercase;
 
-      color: #58675e;
+      color: #394736;
     }
 
-    .preview-events span:not(.dot) {
-      white-space: nowrap;
-    }
-
-    .dot {
+    .preview-dot {
       width: 4px;
       height: 4px;
 
       border-radius: 50%;
 
-      background: #b4864c;
+      background: #a17645;
     }
+
+    .preview-message {
+      max-width: 260px;
+
+      margin:
+        20px auto 0;
+
+      font-size: 9px;
+
+      line-height: 1.7;
+
+      color: #85796d;
+    }
+
+    /* =================================
+       ENVELOPE FRONT
+    ================================= */
 
     .front-left,
     .front-right {
@@ -432,10 +497,10 @@
       background:
         linear-gradient(
           145deg,
-          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.32),
           transparent
         ),
-        #1d332b;
+        #eadfd2;
     }
 
     .front-left {
@@ -444,7 +509,7 @@
       clip-path:
         polygon(
           0 0,
-          100% 62%,
+          100% 60%,
           100% 100%,
           0 100%
         );
@@ -459,7 +524,7 @@
       clip-path:
         polygon(
           100% 0,
-          0 62%,
+          0 60%,
           0 100%,
           100% 100%
         );
@@ -475,7 +540,7 @@
       right: 0;
       bottom: 0;
 
-      height: 53%;
+      height: 52%;
 
       z-index: 6;
 
@@ -488,16 +553,20 @@
           100% 100%
         );
 
+      border-radius:
+        0 0 24px 24px;
+
       background:
         linear-gradient(
           180deg,
-          #1c3029,
-          #172720
+          #e8ddcf,
+          #dccdbc
         );
-
-      border-radius:
-        0 0 24px 24px;
     }
+
+    /* =================================
+       FLAP
+    ================================= */
 
     .flap {
       position: absolute;
@@ -506,11 +575,13 @@
       right: 0;
       top: 0;
 
-      height: 63%;
+      height: 62%;
 
       z-index: 8;
 
       pointer-events: none;
+
+      overflow: hidden;
 
       transform-origin:
         top center;
@@ -528,11 +599,14 @@
           50% 100%
         );
 
+      border-radius:
+        10px 10px 0 0;
+
       background:
         linear-gradient(
           180deg,
-          #284438,
-          #1b3028
+          #f1e9de 0%,
+          #ded1c1 100%
         );
 
       transition:
@@ -545,14 +619,35 @@
         );
     }
 
+    .flap-pattern {
+      position: absolute;
+      inset: 0;
+
+      opacity: 0.18;
+
+      background-image:
+        radial-gradient(
+          circle,
+          #a47d4c 0 1px,
+          transparent 1.5px
+        );
+
+      background-size:
+        17px 17px;
+    }
+
+    /* =================================
+       F ♥ L
+    ================================= */
+
     .seal {
       position: absolute;
 
       left: 50%;
-      bottom: 25px;
+      bottom: 27px;
 
-      width: 170px;
-      height: 82px;
+      width: 155px;
+      height: 86px;
 
       z-index: 15;
 
@@ -563,13 +658,13 @@
       align-items: center;
       justify-content: center;
 
-      gap: 9px;
+      gap: 10px;
+
+      cursor: pointer;
 
       border: 0;
 
       background: transparent;
-
-      cursor: pointer;
 
       transition:
         opacity 0.45s ease,
@@ -577,16 +672,18 @@
     }
 
     .seal-letter {
-      min-width: 24px;
+      min-width: 25px;
 
       font-family:
         "Cormorant Garamond",
         serif;
 
-      font-size: 29px;
+      font-size: 30px;
       font-weight: 600;
 
-      color: #e4c18a;
+      line-height: 1;
+
+      color: #705437;
     }
 
     .seal-line {
@@ -594,47 +691,47 @@
       height: 1px;
 
       background:
-        rgba(228, 193, 138, 0.38);
+        rgba(112, 84, 55, 0.35);
     }
 
     .seal-heart {
-      width: 73px;
-      height: 73px;
-
       position: relative;
+
+      width: 76px;
+      height: 76px;
+
+      flex: 0 0 auto;
 
       display: grid;
       place-items: center;
 
-      flex: 0 0 auto;
-
       border:
         4px solid
-        rgba(255, 248, 229, 0.08);
+        rgba(123, 86, 43, 0.15);
 
       border-radius: 50%;
 
       background:
         radial-gradient(
-          circle at 32% 28%,
-          #e6c17e,
-          #b77e3d 58%,
-          #805326
+          circle at 31% 26%,
+          #ecd49c 0%,
+          #cda263 52%,
+          #9e6e37 100%
         );
 
       box-shadow:
-        0 15px 35px
-        rgba(0, 0, 0, 0.28),
+        0 13px 29px
+        rgba(84, 58, 30, 0.25),
 
         inset 0 0 0 4px
-        rgba(255, 255, 255, 0.08);
+        rgba(255, 255, 255, 0.14);
 
-      font-size: 20px;
+      color: #fffdf6;
 
-      color: #fff6df;
+      font-size: 22px;
     }
 
-    .seal-heart::after {
+    .seal-heart::before {
       content: "";
 
       position: absolute;
@@ -643,16 +740,22 @@
 
       border:
         1px solid
-        rgba(255, 246, 223, 0.34);
+        rgba(255, 250, 239, 0.4);
 
       border-radius: 50%;
     }
 
-    .open-hint {
+    .seal:hover {
+      transform:
+        translateX(-50%)
+        scale(1.055);
+    }
+
+    .tap-text {
       position: absolute;
 
       left: 50%;
-      bottom: -67px;
+      bottom: -75px;
 
       z-index: 20;
 
@@ -663,30 +766,33 @@
 
       pointer-events: none;
 
-      font-size: 8px;
+      font-size: 9px;
       font-weight: 500;
 
-      letter-spacing: 0.22em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
 
-      color:
-        rgba(255, 248, 236, 0.54);
+      color: #777668;
 
       animation:
-        pulse 1.8s
+        hintPulse 1.8s
         ease-in-out infinite;
     }
 
-    @keyframes pulse {
+    @keyframes hintPulse {
       0%,
       100% {
-        opacity: 0.4;
+        opacity: 0.42;
       }
 
       50% {
         opacity: 1;
       }
     }
+
+    /* =================================
+       OPEN STATE
+    ================================= */
 
     .envelope.open .flap {
       z-index: 0;
@@ -695,44 +801,45 @@
         rotateX(-180deg);
     }
 
-    .envelope.open
-    .invitation-preview {
-      transform:
-        translateY(-130px);
-    }
-
     .envelope.open .seal {
       opacity: 0;
 
       transform:
         translateX(-50%)
-        scale(0.75);
+        scale(0.72);
 
       pointer-events: none;
     }
 
-    .envelope.open .open-hint {
+    .envelope.open .tap-text {
       opacity: 0;
     }
 
-    /* =====================================
-       WEDDING PAGE
-    ===================================== */
+    .envelope.open .invitation {
+      transform:
+        translateY(-165px);
+    }
+
+    /* =================================
+       FULL PAGE
+    ================================= */
 
     .wedding-page {
       display: none;
 
+      width: 100%;
+
       opacity: 0;
 
+      padding:
+        70px 18px 90px;
+
       transform:
-        translateY(45px);
+        translateY(40px);
 
       transition:
         opacity 1s ease,
         transform 1s ease;
-
-      padding:
-        45px 16px 90px;
     }
 
     .wedding-page.visible {
@@ -746,61 +853,58 @@
         translateY(0);
     }
 
-    .section-heading {
-      max-width: 720px;
+    .events-header {
+      max-width: 690px;
 
       margin:
-        0 auto 40px;
+        0 auto 36px;
 
       text-align: center;
     }
 
-    .section-heading .small {
+    .events-kicker {
       font-size: 9px;
       font-weight: 600;
 
-      letter-spacing: 0.28em;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
 
-      color: #cfa96a;
+      color: #a17645;
     }
 
-    .section-heading h2 {
-      margin-top: 10px;
+    .events-title {
+      margin-top: 8px;
 
       font-family:
         "Cormorant Garamond",
         serif;
 
       font-size:
-        clamp(42px, 8vw, 62px);
+        clamp(40px, 8vw, 58px);
 
       font-weight: 500;
 
-      color: #fff9ee;
+      line-height: 1;
+
+      color: #394736;
     }
 
-    .section-heading p {
-      max-width: 460px;
+    .events-copy {
+      max-width: 420px;
 
       margin:
-        12px auto 0;
+        13px auto 0;
 
       font-size: 10px;
 
       line-height: 1.8;
 
-      color:
-        rgba(255, 249, 238, 0.58);
+      color: #83786c;
     }
 
-    /* =====================================
-       EVENT CARDS
-    ===================================== */
-
-    .events {
+    .event-list {
       width: 100%;
-      max-width: 760px;
+      max-width: 690px;
 
       margin: 0 auto;
 
@@ -809,38 +913,47 @@
       gap: 30px;
     }
 
+    /* =================================
+       EVENT CARD
+    ================================= */
+
     .event-card {
+      width: 100%;
+
       position: relative;
 
       overflow: hidden;
 
       padding:
-        56px 42px 48px;
+        58px 40px 48px;
 
       border:
         1px solid
-        rgba(211, 169, 100, 0.28);
+        rgba(168, 128, 73, 0.25);
 
-      border-radius: 28px;
+      border-radius: 30px;
 
       background:
         radial-gradient(
           circle at 0 0,
-          rgba(184, 146, 83, 0.11),
-          transparent 28%
+          rgba(210, 223, 203, 0.42),
+          transparent 29%
         ),
         radial-gradient(
           circle at 100% 100%,
-          rgba(83, 119, 98, 0.16),
-          transparent 32%
+          rgba(210, 187, 150, 0.23),
+          transparent 30%
         ),
-        rgba(255, 250, 240, 0.97);
-
-      color: #2c3a31;
+        rgba(
+          255,
+          253,
+          249,
+          0.96
+        );
 
       box-shadow:
-        0 32px 80px
-        rgba(0, 0, 0, 0.2);
+        0 35px 85px
+        rgba(73, 55, 38, 0.11);
 
       text-align: center;
     }
@@ -850,37 +963,35 @@
 
       position: absolute;
 
-      inset: 12px;
+      inset: 14px;
 
       border:
         1px solid
-        rgba(170, 126, 64, 0.26);
+        rgba(168, 128, 73, 0.26);
 
-      border-radius: 19px;
+      border-radius: 20px;
 
       pointer-events: none;
     }
 
     .event-card::after {
-      content: "❦";
+      content: "❀";
 
       position: absolute;
 
-      right: -18px;
-      bottom: -28px;
+      right: -34px;
+      bottom: -34px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-size: 145px;
 
-      font-size: 160px;
+      line-height: 1;
 
-      opacity: 0.04;
+      opacity: 0.045;
 
-      color: #31503f;
+      color: #52604d;
 
       transform:
-        rotate(-20deg);
+        rotate(22deg);
 
       pointer-events: none;
     }
@@ -890,16 +1001,16 @@
       z-index: 2;
     }
 
-    .event-number {
-      margin-bottom: 10px;
+    .event-index {
+      margin-bottom: 11px;
 
       font-size: 8px;
       font-weight: 600;
 
-      letter-spacing: 0.3em;
+      letter-spacing: 0.28em;
       text-transform: uppercase;
 
-      color: #9e7441;
+      color: #a17645;
     }
 
     .event-title {
@@ -910,75 +1021,80 @@
       font-size:
         clamp(34px, 7vw, 50px);
 
-      font-weight: 700;
+      font-weight: 600;
 
-      letter-spacing: 0.055em;
+      letter-spacing: 0.065em;
 
       line-height: 1;
 
-      color: #31493d;
+      color: #394736;
     }
 
-    .invite-line {
-      margin-top: 17px;
+    .invitation-line {
+      max-width: 440px;
+
+      margin:
+        15px auto 0;
 
       font-family:
         "Cormorant Garamond",
         serif;
 
-      font-size: 17px;
+      font-size:
+        clamp(15px, 4vw, 19px);
+
       font-weight: 500;
 
       line-height: 1.5;
 
-      color: #59645d;
+      color: #635c54;
     }
 
-    .name {
-      margin-top: 24px;
+    .groom-name {
+      margin-top: 19px;
 
       font-family:
         "Great Vibes",
         cursive;
 
       font-size:
-        clamp(55px, 12vw, 78px);
+        clamp(55px, 11vw, 78px);
 
-      line-height: 0.95;
+      line-height: 1;
 
-      color: #a16d34;
+      color: #a06e38;
     }
 
-    .parent-line {
-      margin-top: 15px;
+    .groom-parent {
+      margin-top: 14px;
 
       font-family:
         "Cormorant Garamond",
         serif;
 
       font-size:
-        clamp(16px, 4vw, 22px);
+        clamp(17px, 4vw, 23px);
 
-      font-weight: 700;
+      font-weight: 600;
 
-      letter-spacing: 0.035em;
+      letter-spacing: 0.04em;
 
-      color: #26342d;
+      color: #443d35;
     }
 
-    .connector {
-      margin-top: 9px;
+    .and-large {
+      margin-top: 8px;
 
       font-family:
         "Great Vibes",
         cursive;
 
-      font-size: 34px;
+      font-size: 37px;
 
-      color: #536a5b;
+      color: #52604d;
     }
 
-    .daughter {
+    .daughter-large {
       margin-top: -3px;
 
       font-family:
@@ -986,31 +1102,30 @@
         cursive;
 
       font-size:
-        clamp(42px, 9vw, 58px);
+        clamp(40px, 8vw, 54px);
 
-      color: #a16d34;
+      color: #a06e38;
     }
 
     .bride-parent {
-      margin-top: 4px;
+      margin-top: 2px;
 
       font-family:
         "Cormorant Garamond",
         serif;
 
       font-size:
-        clamp(21px, 5vw, 28px);
+        clamp(22px, 5vw, 29px);
 
       font-weight: 700;
 
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
 
-      color: #26342d;
+      color: #443d35;
     }
 
     .ornament {
-      margin:
-        23px auto;
+      margin: 22px auto;
 
       display: flex;
       align-items: center;
@@ -1023,17 +1138,17 @@
     .ornament::after {
       content: "";
 
-      width: 53px;
+      width: 52px;
       height: 1px;
 
       background:
-        rgba(156, 113, 60, 0.35);
+        rgba(168, 128, 73, 0.4);
     }
 
     .ornament span {
-      font-size: 10px;
+      font-size: 11px;
 
-      color: #a37642;
+      color: #a17645;
     }
 
     .date {
@@ -1042,34 +1157,34 @@
         serif;
 
       font-size:
-        clamp(20px, 5vw, 27px);
+        clamp(20px, 5vw, 26px);
 
       font-weight: 600;
 
-      line-height: 1.25;
+      line-height: 1.3;
 
-      color: #31493d;
+      color: #394736;
     }
 
-    .detail-group {
-      max-width: 490px;
+    .details {
+      max-width: 470px;
 
       margin:
-        23px auto 0;
+        25px auto 0;
     }
 
     .detail-label {
-      font-size: 8px;
+      font-size: 9px;
       font-weight: 600;
 
-      letter-spacing: 0.24em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
 
-      color: #a47843;
+      color: #a17645;
     }
 
     .detail-value {
-      margin-top: 6px;
+      margin-top: 5px;
 
       font-family:
         "Cormorant Garamond",
@@ -1078,14 +1193,14 @@
       font-size:
         clamp(21px, 5vw, 28px);
 
-      font-weight: 700;
+      font-weight: 600;
 
       line-height: 1.25;
 
-      color: #30463b;
+      color: #394736;
     }
 
-    .sub-value {
+    .detail-secondary {
       margin-top: 3px;
 
       font-family:
@@ -1093,22 +1208,41 @@
         serif;
 
       font-size: 18px;
-      font-weight: 600;
 
-      color: #525f57;
+      color: #6e675f;
     }
 
+    .detail-divider {
+      width: 50px;
+      height: 1px;
+
+      margin: 20px auto;
+
+      background:
+        rgba(168, 128, 73, 0.3);
+    }
+
+    /* =================================
+       PROGRAMME
+    ================================= */
+
     .programme {
-      max-width: 420px;
+      max-width: 410px;
 
       margin:
         28px auto 0;
 
-      padding-top: 22px;
+      padding:
+        21px 18px;
 
-      border-top:
+      border:
         1px solid
-        rgba(157, 113, 59, 0.18);
+        rgba(168, 128, 73, 0.18);
+
+      border-radius: 16px;
+
+      background:
+        rgba(247, 241, 232, 0.45);
     }
 
     .programme-title {
@@ -1121,10 +1255,10 @@
       font-size: 18px;
       font-weight: 700;
 
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
 
-      color: #8f6335;
+      color: #a06e38;
     }
 
     .programme-row {
@@ -1142,10 +1276,11 @@
       font-size: 18px;
       font-weight: 600;
 
-      color: #3e4e45;
+      color: #443d35;
     }
 
-    .programme-name {
+    .programme-name,
+    .programme-time {
       white-space: nowrap;
     }
 
@@ -1154,86 +1289,64 @@
 
       border-bottom:
         1px dotted
-        rgba(61, 76, 67, 0.35);
+        rgba(68, 61, 53, 0.35);
     }
 
-    .programme-time {
-      white-space: nowrap;
-    }
+    /* =================================
+       LOCATION
+    ================================= */
 
     .location-button {
-      min-height: 47px;
+      min-height: 46px;
 
-      margin-top: 24px;
+      margin-top: 22px;
 
       padding:
-        0 27px;
+        0 25px;
 
       display: inline-flex;
       align-items: center;
       justify-content: center;
 
-      border:
-        1px solid
-        rgba(59, 82, 69, 0.1);
-
       border-radius: 999px;
 
       text-decoration: none;
 
-      font-size: 8px;
+      font-size: 9px;
       font-weight: 600;
 
-      letter-spacing: 0.18em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
 
-      color: #fffdf7;
+      color: white;
 
-      background:
-        linear-gradient(
-          135deg,
-          #415d4d,
-          #2e4639
-        );
+      background: #52604d;
 
       box-shadow:
-        0 12px 26px
-        rgba(48, 69, 57, 0.16);
+        0 13px 28px
+        rgba(55, 67, 51, 0.15);
 
       transition:
         transform 0.25s ease,
-        box-shadow 0.25s ease;
+        background 0.25s ease;
     }
 
     .location-button:hover {
       transform:
         translateY(-2px);
 
-      box-shadow:
-        0 17px 34px
-        rgba(48, 69, 57, 0.23);
+      background: #364033;
     }
 
-    .location-note {
-      margin-top: 17px;
-
-      font-size: 8px;
-
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-
-      color: #8e887f;
-    }
-
-    /* =====================================
+    /* =================================
        FOOTER
-    ===================================== */
+    ================================= */
 
     .footer {
-      max-width: 760px;
+      max-width: 690px;
 
       margin:
-        52px auto 0;
+        40px auto 0;
 
       text-align: center;
     }
@@ -1243,30 +1356,28 @@
         "Cormorant Garamond",
         serif;
 
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 600;
 
-      letter-spacing: 0.18em;
+      letter-spacing: 0.14em;
 
-      color: #d4aa6b;
+      color: #a06e38;
     }
 
-    .footer-text {
-      margin-top: 10px;
+    .footer p {
+      margin-top: 7px;
 
       font-size: 8px;
-      font-weight: 500;
 
-      letter-spacing: 0.23em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
 
-      color:
-        rgba(255, 249, 238, 0.48);
+      color: #7a786c;
     }
 
-    /* =====================================
+    /* =================================
        MOBILE
-    ===================================== */
+    ================================= */
 
     @media (
       max-width: 560px
@@ -1274,34 +1385,43 @@
 
       .intro {
         padding:
-          40px 12px 72px;
+          27px 12px 65px;
       }
 
-      .intro-copy {
-        max-width: 315px;
+      .intro-subtitle {
+        max-width: 310px;
+
+        margin-bottom: 23px;
+
+        font-size: 11px;
       }
 
       .envelope-stage {
-        min-height: 390px;
+        min-height: 490px;
       }
 
       .envelope {
         width:
           min(94vw, 395px);
 
-        height: 245px;
+        height: 248px;
       }
 
-      .invitation-preview {
-        height: 370px;
+      .invitation {
+        width:
+          calc(100% - 28px);
+
+        left: 14px;
+
+        height: 455px;
 
         transform:
-          translateY(145px);
+          translateY(164px);
       }
 
-      .preview-content {
+      .card-content {
         padding:
-          30px 18px;
+          30px 18px 18px;
       }
 
       .preview-title {
@@ -1312,15 +1432,17 @@
         font-size: 42px;
       }
 
-      .preview-events {
-        gap: 7px;
+      .preview-parent {
+        font-size: 13px;
+      }
 
-        font-size: 11px;
+      .preview-events {
+        font-size: 12px;
       }
 
       .seal {
-        width: 145px;
-        height: 72px;
+        width: 136px;
+        height: 74px;
 
         bottom: 20px;
 
@@ -1328,11 +1450,15 @@
       }
 
       .seal-heart {
-        width: 64px;
-        height: 64px;
+        width: 66px;
+        height: 66px;
+
+        font-size: 19px;
       }
 
       .seal-letter {
+        min-width: 20px;
+
         font-size: 25px;
       }
 
@@ -1340,48 +1466,90 @@
         width: 9px;
       }
 
-      .open-hint {
-        bottom: -60px;
+      .tap-text {
+        bottom: -64px;
+
+        font-size: 8px;
+
+        letter-spacing: 0.17em;
       }
 
       .envelope.open
-      .invitation-preview {
+      .invitation {
         transform:
-          translateY(-116px);
+          translateY(-133px);
       }
 
       .wedding-page {
         padding:
-          34px 11px 70px;
+          52px 12px 72px;
       }
 
-      .section-heading {
-        margin-bottom: 28px;
-      }
-
-      .events {
+      .event-list {
         gap: 22px;
       }
 
       .event-card {
         padding:
-          43px 18px 38px;
+          45px 18px 39px;
 
-        border-radius: 22px;
+        border-radius: 23px;
       }
 
       .event-card::before {
-        inset: 8px;
+        inset: 9px;
 
-        border-radius: 15px;
+        border-radius: 16px;
       }
 
-      .invite-line {
-        font-size: 15px;
+      .event-title {
+        font-size:
+          clamp(
+            31px,
+            9vw,
+            42px
+          );
+      }
+
+      .groom-name {
+        font-size:
+          clamp(
+            52px,
+            16vw,
+            68px
+          );
+      }
+
+      .groom-parent {
+        font-size:
+          clamp(
+            16px,
+            4.5vw,
+            20px
+          );
+      }
+
+      .daughter-large {
+        font-size:
+          clamp(
+            38px,
+            12vw,
+            48px
+          );
+      }
+
+      .bride-parent {
+        font-size:
+          clamp(
+            21px,
+            6vw,
+            27px
+          );
       }
 
       .programme {
-        max-width: 320px;
+        padding:
+          19px 14px;
       }
 
       .programme-row {
@@ -1393,19 +1561,29 @@
       max-width: 360px
     ) {
 
-      .event-card {
-        padding-left: 15px;
-        padding-right: 15px;
+      .seal {
+        width: 128px;
+      }
+
+      .seal-heart {
+        width: 61px;
+        height: 61px;
+      }
+
+      .seal-letter {
+        font-size: 23px;
+      }
+
+      .preview-title {
+        font-size: 21px;
+      }
+
+      .preview-name {
+        font-size: 38px;
       }
 
       .programme-row {
         font-size: 15px;
-      }
-
-      .programme-name {
-        white-space: normal;
-
-        text-align: left;
       }
     }
 
@@ -1417,6 +1595,9 @@
       *,
       *::before,
       *::after {
+        scroll-behavior:
+          auto !important;
+
         animation-duration:
           0.01ms !important;
 
@@ -1425,9 +1606,6 @@
 
         transition-duration:
           0.01ms !important;
-
-        scroll-behavior:
-          auto !important;
       }
     }
   </style>
@@ -1436,28 +1614,32 @@
 
 <body>
 
-  <!-- =====================================
-       INTRO / ENVELOPE
-  ====================================== -->
+  <!-- =================================
+       OPENING
+  ================================= -->
 
   <section class="intro">
 
+    <div class="glow one"></div>
+    <div class="glow two"></div>
+
+
     <div class="intro-inner">
 
-      <div class="eyebrow">
+      <div class="mini-title">
         Wedding Invitation
       </div>
 
+
       <h1 class="intro-title">
-        Three Beautiful
-        <span>Celebrations</span>
+        You're Invited
       </h1>
 
-      <p class="intro-copy">
+
+      <p class="intro-subtitle">
         With gratitude and joy,
         we invite you to join us
-        as we celebrate the blessed
-        wedding events of Furqan Moin.
+        for our blessed wedding celebrations.
       </p>
 
 
@@ -1468,47 +1650,59 @@
           id="envelope"
         >
 
-          <div
-            class="envelope-shadow"
-          ></div>
+          <div class="envelope-shadow"></div>
 
-          <div
-            class="envelope-back"
-          ></div>
+          <div class="envelope-back"></div>
 
 
-          <div class="invitation-preview">
+          <div class="invitation">
 
-            <div
-              class="preview-border"
-            ></div>
+            <div class="gold-border"></div>
 
-            <div class="preview-content">
 
-              <div class="preview-small">
-                The Wedding Events Of
+            <div class="card-content">
+
+              <div class="preview-kicker">
+                Wedding Celebrations
               </div>
+
 
               <div class="preview-title">
-                FURQAN MOIN
+                THE WEDDING EVENTS OF
               </div>
+
 
               <div class="preview-name">
                 Furqan Moin
               </div>
 
+
+              <div class="preview-parent">
+                S/O. MR. &amp; MRS. MOINUDDIN
+              </div>
+
+
+              <div class="preview-divider"></div>
+
+
               <div class="preview-events">
 
                 <span>Nikkah</span>
 
-                <span class="dot"></span>
+                <span class="preview-dot"></span>
 
                 <span>Barat</span>
 
-                <span class="dot"></span>
+                <span class="preview-dot"></span>
 
                 <span>Valima</span>
 
+              </div>
+
+
+              <div class="preview-message">
+                Three cherished celebrations,
+                one beautiful beginning.
               </div>
 
             </div>
@@ -1517,19 +1711,20 @@
 
 
           <div class="front-left"></div>
-
           <div class="front-right"></div>
-
           <div class="front-bottom"></div>
 
-          <div class="flap"></div>
+
+          <div class="flap">
+            <div class="flap-pattern"></div>
+          </div>
 
 
           <button
             class="seal"
             id="openInvitation"
             type="button"
-            aria-label="Open Wedding Invitation"
+            aria-label="Open invitation"
           >
 
             <span class="seal-letter">
@@ -1539,7 +1734,7 @@
             <span class="seal-line"></span>
 
             <span class="seal-heart">
-              ♥
+              <span>♥</span>
             </span>
 
             <span class="seal-line"></span>
@@ -1551,7 +1746,7 @@
           </button>
 
 
-          <div class="open-hint">
+          <div class="tap-text">
             Tap the heart to open
           </div>
 
@@ -1564,74 +1759,73 @@
   </section>
 
 
-  <!-- =====================================
-       EVENTS
-  ====================================== -->
+  <!-- =================================
+       FULL INVITATION
+  ================================= -->
 
   <main
     class="wedding-page"
     id="weddingPage"
   >
 
-    <div class="section-heading">
+    <div class="events-header">
 
-      <div class="small">
-        Together With Our Families
+      <div class="events-kicker">
+        With Gratitude
       </div>
 
-      <h2>
+      <h2 class="events-title">
         Wedding Celebrations
       </h2>
 
-      <p>
-        We would be honoured by your
-        presence as we celebrate these
-        cherished moments together.
+      <p class="events-copy">
+        We would be honoured by your presence
+        as we celebrate these cherished occasions.
       </p>
 
     </div>
 
 
-    <div class="events">
+    <div class="event-list">
 
 
       <!-- =================================
            NIKKAH
-      ================================== -->
+      ================================= -->
 
-      <article class="event-card">
+      <section class="event-card">
 
         <div class="event-content">
 
-          <div class="event-number">
+          <div class="event-index">
             Celebration I
           </div>
+
 
           <h3 class="event-title">
             NIKKAH CEREMONY
           </h3>
 
-          <div class="invite-line">
-            With gratitude and joy,
-            you are cordially invited
-            to the Nikkah Ceremony of
-          </div>
 
-          <div class="name">
+          <div class="groom-name">
             Furqan Moin
           </div>
 
-          <div class="parent-line">
+
+          <div class="groom-parent">
             S/O. MR. &amp; MRS. MOINUDDIN
           </div>
 
-          <div class="connector">
+
+          <div class="and-large">
             and
           </div>
 
-          <div class="daughter">
+
+          <div class="daughter-large">
             Daughter of
           </div>
+
 
           <div class="bride-parent">
             MEHMOOD ESSA
@@ -1643,7 +1837,7 @@
           </div>
 
 
-          <div class="detail-group">
+          <div class="details">
 
             <div class="detail-label">
               After Zohor Namaz
@@ -1653,10 +1847,9 @@
               1:30 PM
             </div>
 
-          </div>
 
+            <div class="detail-divider"></div>
 
-          <div class="detail-group">
 
             <div class="detail-label">
               Venue
@@ -1666,65 +1859,70 @@
               JAMAH MASJID PIB COLONY
             </div>
 
-            <div class="sub-value">
+            <div class="detail-secondary">
               Karachi
             </div>
 
+
+            <a
+              class="location-button"
+              href="https://www.google.com/maps/search/?api=1&query=Jamah+Masjid+PIB+Colony+Karachi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Location
+            </a>
+
           </div>
-
-
-          <a
-            class="location-button"
-            href="https://www.google.com/maps/search/?api=1&query=Jamah+Masjid+PIB+Colony+Karachi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Nikkah Location
-          </a>
 
         </div>
 
-      </article>
+      </section>
 
 
       <!-- =================================
-           WEDDING / BARAT
-      ================================== -->
+           BARAT
+      ================================= -->
 
-      <article class="event-card">
+      <section class="event-card">
 
         <div class="event-content">
 
-          <div class="event-number">
+          <div class="event-index">
             Celebration II
           </div>
+
 
           <h3 class="event-title">
             WEDDING CEREMONY
           </h3>
 
-          <div class="invite-line">
+
+          <div class="invitation-line">
             Cordially invite you at the
-            Wedding Ceremony
-            <br />
-            of our beloved
+            Wedding Ceremony of our beloved
           </div>
 
-          <div class="name">
+
+          <div class="groom-name">
             Furqan Moin
           </div>
 
-          <div class="parent-line">
+
+          <div class="groom-parent">
             S/O. MR. &amp; MRS. MOINUDDIN
           </div>
 
-          <div class="connector">
+
+          <div class="and-large">
             with
           </div>
 
-          <div class="daughter">
+
+          <div class="daughter-large">
             Daughter of
           </div>
+
 
           <div class="bride-parent">
             MEHMOOD ESSA
@@ -1741,7 +1939,7 @@
           </div>
 
 
-          <div class="detail-group">
+          <div class="details">
 
             <div class="detail-label">
               Venue
@@ -1751,7 +1949,7 @@
               DEWAN MANSION
             </div>
 
-            <div class="sub-value">
+            <div class="detail-secondary">
               Kashmir Road, Karachi
             </div>
 
@@ -1763,6 +1961,7 @@
             <div class="programme-title">
               Programme
             </div>
+
 
             <div class="programme-row">
 
@@ -1795,56 +1994,63 @@
 
           </div>
 
-
-          <div class="location-note">
-            Location will be added later
-          </div>
+          <!--
+            BARAT LOCATION BUTTON
+            WILL BE ADDED LATER
+          -->
 
         </div>
 
-      </article>
+      </section>
 
 
       <!-- =================================
            VALIMA
-      ================================== -->
+      ================================= -->
 
-      <article class="event-card">
+      <section class="event-card">
 
         <div class="event-content">
 
-          <div class="event-number">
+          <div class="event-index">
             Celebration III
           </div>
+
 
           <h3 class="event-title">
             VALIMA RECEPTION
           </h3>
 
-          <div class="invite-line">
+
+          <div class="invitation-line">
             The family members of
-            <br />
-            MR. &amp; MRS. KULLO BADSHAH (LATE)
-            <br />
+            <strong>
+              MR. &amp; MRS. KULLO BADSHAH (LATE)
+            </strong>
             request the pleasure of your company
-            at the Valima Reception of
+            at the Valima Reception of their beloved
           </div>
 
-          <div class="name">
+
+          <div class="groom-name">
             Furqan Moin
           </div>
 
-          <div class="parent-line">
+
+          <div class="groom-parent">
             S/O. MR. &amp; MRS. MOINUDDIN
           </div>
 
-          <div class="connector">
+
+          <div class="and-large">
             and
           </div>
 
-          <div class="daughter">
+
+          <div class="daughter-large">
             Daughter of
           </div>
+
 
           <div class="bride-parent">
             MEHMOOD ESSA
@@ -1861,7 +2067,7 @@
           </div>
 
 
-          <div class="detail-group">
+          <div class="details">
 
             <div class="detail-label">
               Venue
@@ -1871,7 +2077,7 @@
               THE GRAND BANQUET
             </div>
 
-            <div class="sub-value">
+            <div class="detail-secondary">
               D-2, Block-I,
               North Nazimabad, Karachi
             </div>
@@ -1884,6 +2090,7 @@
             <div class="programme-title">
               Programme
             </div>
+
 
             <div class="programme-row">
 
@@ -1923,12 +2130,12 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Valima Location
+            View Location
           </a>
 
         </div>
 
-      </article>
+      </section>
 
     </div>
 
@@ -1939,9 +2146,9 @@
         F ♥ L
       </div>
 
-      <div class="footer-text">
-        Nikkah · Wedding · Valima
-      </div>
+      <p>
+        Nikkah · Barat · Valima
+      </p>
 
     </footer>
 
@@ -1975,7 +2182,9 @@
           return;
         }
 
+
         opened = true;
+
 
         envelope.classList.add(
           "open"
@@ -1988,6 +2197,7 @@
             weddingPage.classList.add(
               "visible"
             );
+
 
             requestAnimationFrame(
               () => {
@@ -2013,7 +2223,7 @@
             });
 
           },
-          2150
+          2200
         );
 
       }
