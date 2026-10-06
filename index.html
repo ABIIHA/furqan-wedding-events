@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8" />
-
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
@@ -52,10 +51,7 @@
       min-height: 100vh;
       overflow-x: hidden;
 
-      font-family:
-        "Montserrat",
-        sans-serif;
-
+      font-family: "Montserrat", sans-serif;
       color: #443d35;
 
       background:
@@ -82,9 +78,10 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    /* =================================
-       OPENING SCREEN
-    ================================= */
+
+    /* =====================================
+       OPENING
+    ===================================== */
 
     .intro {
       min-height: 100svh;
@@ -97,8 +94,7 @@
 
       overflow: hidden;
 
-      padding:
-        32px 16px 82px;
+      padding: 32px 16px 82px;
     }
 
     .glow {
@@ -108,7 +104,6 @@
       height: 430px;
 
       border-radius: 50%;
-
       filter: blur(90px);
 
       pointer-events: none;
@@ -118,16 +113,14 @@
       top: -190px;
       left: -170px;
 
-      background:
-        rgba(170, 190, 162, 0.28);
+      background: rgba(170, 190, 162, 0.28);
     }
 
     .glow.two {
       right: -190px;
       bottom: -210px;
 
-      background:
-        rgba(202, 171, 127, 0.19);
+      background: rgba(202, 171, 127, 0.19);
     }
 
     .intro-inner {
@@ -143,9 +136,7 @@
     .mini-title {
       margin-bottom: 8px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
       font-size: 11px;
       font-weight: 600;
@@ -157,13 +148,9 @@
     }
 
     .intro-title {
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
-      font-size:
-        clamp(42px, 8vw, 62px);
-
+      font-size: clamp(42px, 8vw, 62px);
       font-weight: 500;
 
       line-height: 1;
@@ -174,19 +161,18 @@
     .intro-subtitle {
       max-width: 365px;
 
-      margin:
-        14px auto 38px;
+      margin: 14px auto 38px;
 
       font-size: 12px;
-
       line-height: 1.8;
 
       color: #83786c;
     }
 
-    /* =================================
+
+    /* =====================================
        ENVELOPE
-    ================================= */
+    ===================================== */
 
     .envelope-stage {
       min-height: 565px;
@@ -199,9 +185,7 @@
     }
 
     .envelope {
-      width:
-        min(92vw, 430px);
-
+      width: min(92vw, 430px);
       height: 285px;
 
       position: relative;
@@ -223,9 +207,7 @@
 
       border-radius: 50%;
 
-      background:
-        rgba(71, 54, 38, 0.17);
-
+      background: rgba(71, 54, 38, 0.17);
       filter: blur(23px);
     }
 
@@ -235,12 +217,9 @@
 
       z-index: 1;
 
-      border:
-        1px solid
-        rgba(127, 100, 68, 0.13);
+      border: 1px solid rgba(127, 100, 68, 0.13);
 
-      border-radius:
-        10px 10px 24px 24px;
+      border-radius: 10px 10px 24px 24px;
 
       background:
         linear-gradient(
@@ -255,16 +234,15 @@
         rgba(80, 62, 44, 0.13);
     }
 
-    /* =================================
+
+    /* =====================================
        CARD INSIDE ENVELOPE
-    ================================= */
+    ===================================== */
 
     .invitation {
       position: absolute;
 
-      width:
-        calc(100% - 32px);
-
+      width: calc(100% - 32px);
       height: 510px;
 
       left: 16px;
@@ -274,12 +252,9 @@
 
       overflow: hidden;
 
-      border:
-        1px solid
-        rgba(168, 128, 73, 0.26);
+      border: 1px solid rgba(168, 128, 73, 0.26);
 
-      border-radius:
-        19px 19px 12px 12px;
+      border-radius: 19px 19px 12px 12px;
 
       background:
         radial-gradient(
@@ -298,17 +273,11 @@
         0 25px 50px
         rgba(73, 55, 38, 0.12);
 
-      transform:
-        translateY(180px);
+      transform: translateY(180px);
 
       transition:
         transform 1.45s
-        cubic-bezier(
-          .22,
-          .61,
-          .36,
-          1
-        );
+        cubic-bezier(.22, .61, .36, 1);
     }
 
     .gold-border {
@@ -316,9 +285,7 @@
 
       inset: 12px;
 
-      border:
-        1px solid
-        rgba(168, 128, 73, 0.34);
+      border: 1px solid rgba(168, 128, 73, 0.34);
 
       border-radius: 13px;
 
@@ -332,7 +299,6 @@
       position: absolute;
 
       font-size: 110px;
-
       line-height: 1;
 
       opacity: 0.065;
@@ -346,25 +312,21 @@
       left: -32px;
       top: 28px;
 
-      transform:
-        rotate(-24deg);
+      transform: rotate(-24deg);
     }
 
     .invitation::after {
       right: -35px;
       bottom: 22px;
 
-      transform:
-        rotate(24deg);
+      transform: rotate(24deg);
     }
 
     .card-content {
       position: relative;
-
       z-index: 3;
 
-      padding:
-        38px 24px 25px;
+      padding: 38px 24px 25px;
 
       text-align: center;
     }
@@ -382,9 +344,7 @@
     .preview-title {
       margin-top: 8px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
       font-size: 27px;
       font-weight: 600;
@@ -397,12 +357,9 @@
     .preview-name {
       margin-top: 25px;
 
-      font-family:
-        "Great Vibes",
-        cursive;
+      font-family: "Great Vibes", cursive;
 
       font-size: 50px;
-
       line-height: 1;
 
       color: #a06e38;
@@ -411,9 +368,7 @@
     .preview-parent {
       margin-top: 11px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
       font-size: 15px;
       font-weight: 600;
@@ -429,8 +384,7 @@
 
       margin: 22px auto;
 
-      background:
-        rgba(168, 128, 73, 0.4);
+      background: rgba(168, 128, 73, 0.4);
     }
 
     .preview-events {
@@ -442,9 +396,7 @@
 
       gap: 8px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
       font-size: 15px;
       font-weight: 600;
@@ -467,19 +419,18 @@
     .preview-message {
       max-width: 260px;
 
-      margin:
-        20px auto 0;
+      margin: 20px auto 0;
 
       font-size: 9px;
-
       line-height: 1.7;
 
       color: #85796d;
     }
 
-    /* =================================
+
+    /* =====================================
        ENVELOPE FRONT
-    ================================= */
+    ===================================== */
 
     .front-left,
     .front-right {
@@ -514,8 +465,7 @@
           0 100%
         );
 
-      border-radius:
-        0 0 0 24px;
+      border-radius: 0 0 0 24px;
     }
 
     .front-right {
@@ -529,8 +479,7 @@
           100% 100%
         );
 
-      border-radius:
-        0 0 24px 0;
+      border-radius: 0 0 24px 0;
     }
 
     .front-bottom {
@@ -553,8 +502,7 @@
           100% 100%
         );
 
-      border-radius:
-        0 0 24px 24px;
+      border-radius: 0 0 24px 24px;
 
       background:
         linear-gradient(
@@ -564,9 +512,10 @@
         );
     }
 
-    /* =================================
+
+    /* =====================================
        FLAP
-    ================================= */
+    ===================================== */
 
     .flap {
       position: absolute;
@@ -583,14 +532,11 @@
 
       overflow: hidden;
 
-      transform-origin:
-        top center;
+      transform-origin: top center;
 
-      transform:
-        rotateX(0deg);
+      transform: rotateX(0deg);
 
-      backface-visibility:
-        hidden;
+      backface-visibility: hidden;
 
       clip-path:
         polygon(
@@ -599,8 +545,7 @@
           50% 100%
         );
 
-      border-radius:
-        10px 10px 0 0;
+      border-radius: 10px 10px 0 0;
 
       background:
         linear-gradient(
@@ -611,12 +556,7 @@
 
       transition:
         transform 1.15s
-        cubic-bezier(
-          .22,
-          .61,
-          .36,
-          1
-        );
+        cubic-bezier(.22, .61, .36, 1);
     }
 
     .flap-pattern {
@@ -632,13 +572,13 @@
           transparent 1.5px
         );
 
-      background-size:
-        17px 17px;
+      background-size: 17px 17px;
     }
 
-    /* =================================
+
+    /* =====================================
        F ♥ L
-    ================================= */
+    ===================================== */
 
     .seal {
       position: absolute;
@@ -651,8 +591,7 @@
 
       z-index: 15;
 
-      transform:
-        translateX(-50%);
+      transform: translateX(-50%);
 
       display: flex;
       align-items: center;
@@ -663,7 +602,6 @@
       cursor: pointer;
 
       border: 0;
-
       background: transparent;
 
       transition:
@@ -674,9 +612,7 @@
     .seal-letter {
       min-width: 25px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
       font-size: 30px;
       font-weight: 600;
@@ -690,8 +626,7 @@
       width: 14px;
       height: 1px;
 
-      background:
-        rgba(112, 84, 55, 0.35);
+      background: rgba(112, 84, 55, 0.35);
     }
 
     .seal-heart {
@@ -705,9 +640,7 @@
       display: grid;
       place-items: center;
 
-      border:
-        4px solid
-        rgba(123, 86, 43, 0.15);
+      border: 4px solid rgba(123, 86, 43, 0.15);
 
       border-radius: 50%;
 
@@ -738,9 +671,7 @@
 
       inset: 7px;
 
-      border:
-        1px solid
-        rgba(255, 250, 239, 0.4);
+      border: 1px solid rgba(255, 250, 239, 0.4);
 
       border-radius: 50%;
     }
@@ -759,8 +690,7 @@
 
       z-index: 20;
 
-      transform:
-        translateX(-50%);
+      transform: translateX(-50%);
 
       white-space: nowrap;
 
@@ -790,15 +720,15 @@
       }
     }
 
-    /* =================================
+
+    /* =====================================
        OPEN STATE
-    ================================= */
+    ===================================== */
 
     .envelope.open .flap {
       z-index: 0;
 
-      transform:
-        rotateX(-180deg);
+      transform: rotateX(-180deg);
     }
 
     .envelope.open .seal {
@@ -816,13 +746,13 @@
     }
 
     .envelope.open .invitation {
-      transform:
-        translateY(-165px);
+      transform: translateY(-165px);
     }
 
-    /* =================================
-       FULL PAGE
-    ================================= */
+
+    /* =====================================
+       FULL INVITATION
+    ===================================== */
 
     .wedding-page {
       display: none;
@@ -831,11 +761,9 @@
 
       opacity: 0;
 
-      padding:
-        70px 18px 90px;
+      padding: 70px 18px 90px;
 
-      transform:
-        translateY(40px);
+      transform: translateY(40px);
 
       transition:
         opacity 1s ease,
@@ -848,16 +776,13 @@
 
     .wedding-page.show {
       opacity: 1;
-
-      transform:
-        translateY(0);
+      transform: translateY(0);
     }
 
     .events-header {
       max-width: 690px;
 
-      margin:
-        0 auto 36px;
+      margin: 0 auto 36px;
 
       text-align: center;
     }
@@ -875,13 +800,9 @@
     .events-title {
       margin-top: 8px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
-      font-size:
-        clamp(40px, 8vw, 58px);
-
+      font-size: clamp(40px, 8vw, 58px);
       font-weight: 500;
 
       line-height: 1;
@@ -892,11 +813,9 @@
     .events-copy {
       max-width: 420px;
 
-      margin:
-        13px auto 0;
+      margin: 13px auto 0;
 
       font-size: 10px;
-
       line-height: 1.8;
 
       color: #83786c;
@@ -913,9 +832,10 @@
       gap: 30px;
     }
 
-    /* =================================
+
+    /* =====================================
        EVENT CARD
-    ================================= */
+    ===================================== */
 
     .event-card {
       width: 100%;
@@ -924,12 +844,9 @@
 
       overflow: hidden;
 
-      padding:
-        58px 40px 48px;
+      padding: 58px 40px 48px;
 
-      border:
-        1px solid
-        rgba(168, 128, 73, 0.25);
+      border: 1px solid rgba(168, 128, 73, 0.25);
 
       border-radius: 30px;
 
@@ -944,12 +861,7 @@
           rgba(210, 187, 150, 0.23),
           transparent 30%
         ),
-        rgba(
-          255,
-          253,
-          249,
-          0.96
-        );
+        rgba(255, 253, 249, 0.96);
 
       box-shadow:
         0 35px 85px
@@ -965,9 +877,7 @@
 
       inset: 14px;
 
-      border:
-        1px solid
-        rgba(168, 128, 73, 0.26);
+      border: 1px solid rgba(168, 128, 73, 0.26);
 
       border-radius: 20px;
 
@@ -983,15 +893,13 @@
       bottom: -34px;
 
       font-size: 145px;
-
       line-height: 1;
 
       opacity: 0.045;
 
       color: #52604d;
 
-      transform:
-        rotate(22deg);
+      transform: rotate(22deg);
 
       pointer-events: none;
     }
@@ -1014,13 +922,9 @@
     }
 
     .event-title {
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
-      font-size:
-        clamp(34px, 7vw, 50px);
-
+      font-size: clamp(34px, 7vw, 50px);
       font-weight: 600;
 
       letter-spacing: 0.065em;
@@ -1033,16 +937,11 @@
     .invitation-line {
       max-width: 440px;
 
-      margin:
-        15px auto 0;
+      margin: 15px auto 0;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
-      font-size:
-        clamp(15px, 4vw, 19px);
-
+      font-size: clamp(15px, 4vw, 19px);
       font-weight: 500;
 
       line-height: 1.5;
@@ -1053,12 +952,9 @@
     .groom-name {
       margin-top: 19px;
 
-      font-family:
-        "Great Vibes",
-        cursive;
+      font-family: "Great Vibes", cursive;
 
-      font-size:
-        clamp(55px, 11vw, 78px);
+      font-size: clamp(55px, 11vw, 78px);
 
       line-height: 1;
 
@@ -1068,13 +964,9 @@
     .groom-parent {
       margin-top: 14px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
-      font-size:
-        clamp(17px, 4vw, 23px);
-
+      font-size: clamp(17px, 4vw, 23px);
       font-weight: 600;
 
       letter-spacing: 0.04em;
@@ -1085,9 +977,7 @@
     .and-large {
       margin-top: 8px;
 
-      font-family:
-        "Great Vibes",
-        cursive;
+      font-family: "Great Vibes", cursive;
 
       font-size: 37px;
 
@@ -1097,12 +987,9 @@
     .daughter-large {
       margin-top: -3px;
 
-      font-family:
-        "Great Vibes",
-        cursive;
+      font-family: "Great Vibes", cursive;
 
-      font-size:
-        clamp(40px, 8vw, 54px);
+      font-size: clamp(40px, 8vw, 54px);
 
       color: #a06e38;
     }
@@ -1110,13 +997,9 @@
     .bride-parent {
       margin-top: 2px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
-      font-size:
-        clamp(22px, 5vw, 29px);
-
+      font-size: clamp(22px, 5vw, 29px);
       font-weight: 700;
 
       letter-spacing: 0.06em;
@@ -1141,8 +1024,7 @@
       width: 52px;
       height: 1px;
 
-      background:
-        rgba(168, 128, 73, 0.4);
+      background: rgba(168, 128, 73, 0.4);
     }
 
     .ornament span {
@@ -1152,13 +1034,9 @@
     }
 
     .date {
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
-      font-size:
-        clamp(20px, 5vw, 26px);
-
+      font-size: clamp(20px, 5vw, 26px);
       font-weight: 600;
 
       line-height: 1.3;
@@ -1169,8 +1047,7 @@
     .details {
       max-width: 470px;
 
-      margin:
-        25px auto 0;
+      margin: 25px auto 0;
     }
 
     .detail-label {
@@ -1186,13 +1063,9 @@
     .detail-value {
       margin-top: 5px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
-      font-size:
-        clamp(21px, 5vw, 28px);
-
+      font-size: clamp(21px, 5vw, 28px);
       font-weight: 600;
 
       line-height: 1.25;
@@ -1203,9 +1076,7 @@
     .detail-secondary {
       margin-top: 3px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
       font-size: 18px;
 
@@ -1218,39 +1089,32 @@
 
       margin: 20px auto;
 
-      background:
-        rgba(168, 128, 73, 0.3);
+      background: rgba(168, 128, 73, 0.3);
     }
 
-    /* =================================
+
+    /* =====================================
        PROGRAMME
-    ================================= */
+    ===================================== */
 
     .programme {
       max-width: 410px;
 
-      margin:
-        28px auto 0;
+      margin: 28px auto 0;
 
-      padding:
-        21px 18px;
+      padding: 21px 18px;
 
-      border:
-        1px solid
-        rgba(168, 128, 73, 0.18);
+      border: 1px solid rgba(168, 128, 73, 0.18);
 
       border-radius: 16px;
 
-      background:
-        rgba(247, 241, 232, 0.45);
+      background: rgba(247, 241, 232, 0.45);
     }
 
     .programme-title {
       margin-bottom: 14px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
       font-size: 18px;
       font-weight: 700;
@@ -1269,9 +1133,7 @@
 
       margin-top: 10px;
 
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
       font-size: 18px;
       font-weight: 600;
@@ -1287,22 +1149,20 @@
     .programme-dots {
       flex: 1;
 
-      border-bottom:
-        1px dotted
-        rgba(68, 61, 53, 0.35);
+      border-bottom: 1px dotted rgba(68, 61, 53, 0.35);
     }
 
-    /* =================================
-       LOCATION
-    ================================= */
+
+    /* =====================================
+       LOCATION BUTTON
+    ===================================== */
 
     .location-button {
       min-height: 46px;
 
       margin-top: 22px;
 
-      padding:
-        0 25px;
+      padding: 0 25px;
 
       display: inline-flex;
       align-items: center;
@@ -1332,29 +1192,26 @@
     }
 
     .location-button:hover {
-      transform:
-        translateY(-2px);
+      transform: translateY(-2px);
 
       background: #364033;
     }
 
-    /* =================================
+
+    /* =====================================
        FOOTER
-    ================================= */
+    ===================================== */
 
     .footer {
       max-width: 690px;
 
-      margin:
-        40px auto 0;
+      margin: 40px auto 0;
 
       text-align: center;
     }
 
     .footer-monogram {
-      font-family:
-        "Cormorant Garamond",
-        serif;
+      font-family: "Cormorant Garamond", serif;
 
       font-size: 24px;
       font-weight: 600;
@@ -1375,17 +1232,15 @@
       color: #7a786c;
     }
 
-    /* =================================
-       MOBILE
-    ================================= */
 
-    @media (
-      max-width: 560px
-    ) {
+    /* =====================================
+       MOBILE
+    ===================================== */
+
+    @media (max-width: 560px) {
 
       .intro {
-        padding:
-          27px 12px 65px;
+        padding: 27px 12px 65px;
       }
 
       .intro-subtitle {
@@ -1401,27 +1256,22 @@
       }
 
       .envelope {
-        width:
-          min(94vw, 395px);
-
+        width: min(94vw, 395px);
         height: 248px;
       }
 
       .invitation {
-        width:
-          calc(100% - 28px);
+        width: calc(100% - 28px);
 
         left: 14px;
 
         height: 455px;
 
-        transform:
-          translateY(164px);
+        transform: translateY(164px);
       }
 
       .card-content {
-        padding:
-          30px 18px 18px;
+        padding: 30px 18px 18px;
       }
 
       .preview-title {
@@ -1474,15 +1324,12 @@
         letter-spacing: 0.17em;
       }
 
-      .envelope.open
-      .invitation {
-        transform:
-          translateY(-133px);
+      .envelope.open .invitation {
+        transform: translateY(-133px);
       }
 
       .wedding-page {
-        padding:
-          52px 12px 72px;
+        padding: 52px 12px 72px;
       }
 
       .event-list {
@@ -1490,8 +1337,7 @@
       }
 
       .event-card {
-        padding:
-          45px 18px 39px;
+        padding: 45px 18px 39px;
 
         border-radius: 23px;
       }
@@ -1548,8 +1394,7 @@
       }
 
       .programme {
-        padding:
-          19px 14px;
+        padding: 19px 14px;
       }
 
       .programme-row {
@@ -1557,9 +1402,8 @@
       }
     }
 
-    @media (
-      max-width: 360px
-    ) {
+
+    @media (max-width: 360px) {
 
       .seal {
         width: 128px;
@@ -1587,25 +1431,18 @@
       }
     }
 
-    @media (
-      prefers-reduced-motion:
-      reduce
-    ) {
+
+    @media (prefers-reduced-motion: reduce) {
 
       *,
       *::before,
       *::after {
-        scroll-behavior:
-          auto !important;
+        scroll-behavior: auto !important;
 
-        animation-duration:
-          0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
 
-        animation-iteration-count:
-          1 !important;
-
-        transition-duration:
-          0.01ms !important;
+        transition-duration: 0.01ms !important;
       }
     }
   </style>
@@ -1614,9 +1451,9 @@
 
 <body>
 
-  <!-- =================================
+  <!-- =====================================
        OPENING
-  ================================= -->
+  ====================================== -->
 
   <section class="intro">
 
@@ -1711,12 +1548,16 @@
 
 
           <div class="front-left"></div>
+
           <div class="front-right"></div>
+
           <div class="front-bottom"></div>
 
 
           <div class="flap">
+
             <div class="flap-pattern"></div>
+
           </div>
 
 
@@ -1731,13 +1572,21 @@
               F
             </span>
 
+
             <span class="seal-line"></span>
+
 
             <span class="seal-heart">
-              <span>♥</span>
+
+              <span>
+                ♥
+              </span>
+
             </span>
 
+
             <span class="seal-line"></span>
+
 
             <span class="seal-letter">
               L
@@ -1759,9 +1608,9 @@
   </section>
 
 
-  <!-- =================================
-       FULL INVITATION
-  ================================= -->
+  <!-- =====================================
+       FULL WEDDING INVITATION
+  ====================================== -->
 
   <main
     class="wedding-page"
@@ -1774,9 +1623,11 @@
         With Gratitude
       </div>
 
+
       <h2 class="events-title">
         Wedding Celebrations
       </h2>
+
 
       <p class="events-copy">
         We would be honoured by your presence
@@ -1791,7 +1642,7 @@
 
       <!-- =================================
            NIKKAH
-      ================================= -->
+      ================================== -->
 
       <section class="event-card">
 
@@ -1843,6 +1694,7 @@
               After Zohor Namaz
             </div>
 
+
             <div class="detail-value">
               1:30 PM
             </div>
@@ -1855,9 +1707,11 @@
               Venue
             </div>
 
+
             <div class="detail-value">
               JAMAH MASJID PIB COLONY
             </div>
+
 
             <div class="detail-secondary">
               Karachi
@@ -1881,8 +1735,8 @@
 
 
       <!-- =================================
-           BARAT
-      ================================= -->
+           BARAT / WEDDING CEREMONY
+      ================================== -->
 
       <section class="event-card">
 
@@ -1900,7 +1754,8 @@
 
           <div class="invitation-line">
             Cordially invite you at the
-            Wedding Ceremony of our beloved
+            Wedding Ceremony
+            of our beloved
           </div>
 
 
@@ -1945,9 +1800,11 @@
               Venue
             </div>
 
+
             <div class="detail-value">
               DEWAN MANSION
             </div>
+
 
             <div class="detail-secondary">
               Kashmir Road, Karachi
@@ -1969,7 +1826,9 @@
                 Barat
               </span>
 
+
               <span class="programme-dots"></span>
+
 
               <span class="programme-time">
                 3:00 PM
@@ -1984,7 +1843,9 @@
                 Dinner
               </span>
 
+
               <span class="programme-dots"></span>
+
 
               <span class="programme-time">
                 6:00 PM
@@ -1994,11 +1855,6 @@
 
           </div>
 
-          <!--
-            BARAT LOCATION BUTTON
-            WILL BE ADDED LATER
-          -->
-
         </div>
 
       </section>
@@ -2006,7 +1862,7 @@
 
       <!-- =================================
            VALIMA
-      ================================= -->
+      ================================== -->
 
       <section class="event-card">
 
@@ -2023,12 +1879,8 @@
 
 
           <div class="invitation-line">
-            The family members of
-            <strong>
-              MR. &amp; MRS. KULLO BADSHAH (LATE)
-            </strong>
-            request the pleasure of your company
-            at the Valima Reception of their beloved
+            Request the pleasure of your company
+            at the Valima Reception of our beloved
           </div>
 
 
@@ -2073,9 +1925,11 @@
               Venue
             </div>
 
+
             <div class="detail-value">
               THE GRAND BANQUET
             </div>
+
 
             <div class="detail-secondary">
               D-2, Block-I,
@@ -2098,7 +1952,9 @@
                 Gathering
               </span>
 
+
               <span class="programme-dots"></span>
+
 
               <span class="programme-time">
                 9:00 PM
@@ -2113,7 +1969,9 @@
                 Dinner
               </span>
 
+
               <span class="programme-dots"></span>
+
 
               <span class="programme-time">
                 10:30 PM
@@ -2146,6 +2004,7 @@
         F ♥ L
       </div>
 
+
       <p>
         Nikkah · Barat · Valima
       </p>
@@ -2161,15 +2020,18 @@
         "envelope"
       );
 
+
     const openInvitation =
       document.getElementById(
         "openInvitation"
       );
 
+
     const weddingPage =
       document.getElementById(
         "weddingPage"
       );
+
 
     let opened = false;
 
